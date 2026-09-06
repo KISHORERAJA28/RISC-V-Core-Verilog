@@ -18,3 +18,7 @@ Icarus Verilog and synthesized (gate-level) with Yosys.
 2. Load/Store instruction support (memory-mapped data memory).
 3. JAL/JALR jump instructions.
 4. Timing closure against a real standard-cell PDK (e.g., Skywater 130nm via OpenLane).
+
+#bash
+iverilog -o sim.out rtl/*.v sim/tb_riscv_core.v
+vvp sim.out
