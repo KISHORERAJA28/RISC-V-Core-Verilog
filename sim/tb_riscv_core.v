@@ -1,19 +1,3 @@
-// ====================================================================
-// Module: tb_riscv_core.v
-// Description: Functional testbench for riscv_core_top. Loads a small
-//              program (program.hex) exercising ADDI, ADD, SUB, and a
-//              taken BEQ branch, checks register file results, and
-//              dumps waveforms for GTKWave/ModelSim inspection.
-// Program under test:
-//   0: addi x1, x0, 5
-//   4: addi x2, x0, 3
-//   8: add  x3, x1, x2      -> x3 = 8
-//  12: sub  x4, x1, x2      -> x4 = 2
-//  16: addi x2, x2, 2       -> x2 = 5  (x1 == x2 now)
-//  20: beq  x1, x2, +8      -> TAKEN, skips PC=24
-//  24: addi x5, x0, 99      -> must NOT execute (skipped by branch)
-//  28: beq  x0, x0, 0       -> infinite loop (halt)
-// ====================================================================
 `timescale 1ns/1ps
 
 module tb_riscv_core();
