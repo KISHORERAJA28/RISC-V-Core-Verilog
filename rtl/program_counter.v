@@ -1,12 +1,7 @@
-// ====================================================================
-// Module: program_counter.v
-// Description: 32-bit Program Counter with synchronous reset and
-//              support for sequential (+4) or branch/jump targets
-// ====================================================================
 module program_counter (
     input  wire        clk,
     input  wire        rst,
-    input  wire        pc_src,        // 0 = PC+4, 1 = branch/jump target
+    input  wire        pc_src,        
     input  wire [31:0] branch_target,
     output reg  [31:0] pc_out
 );
