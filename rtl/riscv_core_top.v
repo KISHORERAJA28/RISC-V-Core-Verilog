@@ -1,11 +1,3 @@
-
-// ====================================================================
-// Module: riscv_core_top.v
-// Description: Single-cycle RV32I core integrating Program Counter,
-//              Instruction Memory, Register File, Immediate Generator,
-//              Control Unit, and ALU. Supports R-type, I-type (ADDI-
-//              family), and BEQ branch instructions.
-// ====================================================================
 module riscv_core_top (
     input  wire clk,
     input  wire rst
