@@ -1,9 +1,3 @@
-// ====================================================================
-// Module: register_file.v
-// Description: RV32I 32x32-bit General Purpose Register File
-// Features: 2 asynchronous read ports, 1 synchronous write port,
-//           x0 hardwired to zero (per RV32I spec)
-// ====================================================================
 module register_file (
     input  wire        clk,
     input  wire        we,
