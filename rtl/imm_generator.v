@@ -1,8 +1,3 @@
-// ====================================================================
-// Module: imm_generator.v
-// Description: RV32I Immediate Generator — sign-extends and reorders
-//              immediate fields for I-type and B-type instructions.
-// ====================================================================
 module imm_generator (
     input  wire [31:0] instruction,
     output reg  [31:0] imm_out
